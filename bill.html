@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <h1><u>Hunger Point</u></h1>
+    <title>Bill</title>
+    <ul><li><u><h2>Select items and print the Bill:</h2></u></li></ul>
+    <style>img{
+        border: color 5px  black;
+    }
+    button{
+        padding-bottom:10px;
+        font-size:xx-large;
+        text-decoration: double;
+        border:50px #0f0a0a;
+        color: rgb(8, 28, 128);
+        
+
+    }
+    .bill{
+        padding-top: 50px;
+        
+
+
+    }
+    div{
+        border-radius: 10px;
+        border: color 5px  #0f0a0a;
+    }
+    body{
+        border-radius: 5px solid;
+    }
+      table {
+        border: color 5px rgb(247, 241, 241);
+        border-collapse: collapse;
+        width: 40%;
+        
+      }
+      
+      th, td {
+        text-align: left;
+        border-bottom: 3px solid #d32828;
+      }
+      
+      th {
+        background-color: #d3c3ef;
+      }
+      #myTable {
+        display: none;
+        border: 5px solid;
+      }
+      .product-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        grid-gap: 20px;
+        margin: 0 auto;
+        max-width: 900px;
+    
+      }
+      
+      .product {
+        background-color: #f3e17a;
+        border: 2px solid #0f0a0a;
+        box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+        padding-left:5px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
+      
+      .product img {
+        max-width: 80%;
+      }
+      
+      .product h3 {
+        font-size: 1.2em;
+        margin: 0;
+        padding: 10px 0;
+      }
+      
+      .product p {
+        font-size:25px;
+        margin: 0;
+        padding: 5px ;
+        padding-left: 50px;
+      }
+      .bill{
+        color: rgb(24, 88, 144);
+        text-align: center;
+        padding-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+
+    
+    <div class="product-grid">
+      <div class="product">
+        <img src="https://th.bing.com/th/id/R.76949c4de8984fac2c820e45be30a76f?rik=b5hiqWH4pQ7gSw&riu=http%3a%2f%2fwww.zastavki.com%2fpictures%2f1920x1200%2f2011%2fFood_Pizza_Delicious_pizza_029580_.jpg&ehk=nfCIjL%2bH434p4VtDF0x0Nf9boqDY9qtGPbab%2bJM68AA%3d&risl=&pid=ImgRaw&r=0" alt="Product 1">
+        <h3>Pizza</h3>
+        <p>INR 499</p>
+        <div class="product">
+            <div >
+                <button id="increment1">+</button>
+            </div>
+            <div>
+                <p id="count1">0</p>
+            </div>
+            <div>
+                <button id="decrement1">-</button>
+            </div>
+        </div>
+      </div>
+      <div class="product">
+        <img src="https://www.mashed.com/img/gallery/only-14-percent-of-people-consider-this-the-best-fast-food-burger/l-intro-1624562493.jpg" alt="Product 2">
+        <h3>Burger</h3>
+        <p>INR 399</p>
+        <div class="product">
+            <div >
+                <button id="increment2">+</button>
+            </div>
+            <div>
+                <p id="count2">0</p>
+            </div>
+            <div>
+                <button id="decrement2">-</button>
+            </div>
+        </div>    
+      </div>
+      <div class="product">
+        <img src='https://www.thespruceeats.com/thmb/hJtP5QhBfZayjUD7RCyVbydJHtk=/960x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-885397466-5c0cc0634cedfd00012758a7.jpg' alt="p">
+        <h3>Pasta</h3>
+        <p>INR 300</p>
+        <div class="product">
+            <div >
+                <button id="increment3">+</button>
+            </div>
+            <div>
+                <p id="count3">0</p>
+            </div>
+            <div>
+                <button id="decrement3">-</button>
+            </div>
+        </div>
+      </div>
+      <div class="product">
+        <img src="https://th.bing.com/th/id/R.9e1e58c358ef707a9fa033e4d0e21102?rik=2n2ljmiZHaz2ZA&riu=http%3a%2f%2fimages.wisegeek.com%2fclub-sandwich-on-plate-with-pickle.jpg&ehk=qr2xxvfOlo2m3VtvAhETgm%2f04%2fNToDfLN060cMbhINc%3d&risl=&pid=ImgRaw&r=0" alt="Product 4">
+        <h3>Sandwich</h3>
+        <p>INR 199</p>
+        <div class="product">
+            <div >
+                <button id="increment4">+</button>
+            </div>
+            <div>
+                <p id="count4">0</p>
+            </div>
+            <div>
+                <button id="decrement4">-</button>
+            </div>
+        </div>
+      </div>
+      <div class="product">
+        <img src="https://i.pinimg.com/originals/43/b3/f0/43b3f0234a38599a6910a79c49208d43.jpg" alt="Product 2">
+        <h3>KFC</h3>
+        <p>INR 800</p>
+        <div class="product">
+            <div >
+                <button id="increment5">+</button>
+            </div>
+            <div>
+                <p id="count5">0</p>
+            </div>
+            <div>
+                <button id="decrement5">-</button>
+            </div>
+        </div>
+      </div>
+      <div class="product">
+        <img src="https://www.archanaskitchen.com/images/archanaskitchen/10-Brands/DelMonte-KidsRecipes/Healthy_Paneer_Frankie_Rolls_Recipe_-_Kids_Recipes_Made_With_Del_Monte_-1.jpg" alt="Product 3">
+        <h3>Frankie</h3>
+        <p>INR 100</p>
+        <div class="product">
+            <div >
+                <button id="increment6">+</button>
+            </div>
+            <div>
+                <p id="count6">0</p>
+            </div>
+            <div>
+                <button id="decrement6">-</button>
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="bill">
+        <b><button style="border: 5px solid rgb(4, 2, 3) ;background-color: #f3ef86;" onclick="showTable()">Print Bill</button></b>
+    </div>
+    <table id="myTable" align="center">
+        <tr>
+            <th width="40%">
+                1.Pizza
+            </th>
+            <th>
+                :
+            </th>
+            <th>
+                <p id="price1"></p>
+            </th>
+        </tr>
+        <tr>
+            <th>
+                2.Burger
+            </th>
+            <th>
+                :
+            </th>
+            <th>
+                <p id="price2"></p>
+            </th>
+        </tr>
+        <tr>
+            <th>
+                3.Pasta
+            </th>
+            <th>
+                :
+            </th>
+            <th>
+                <p id="price3"></p>
+            </th>
+        </tr>
+        <tr>
+            <th>
+                4.Sandwich
+            </th>
+            <th>
+                :
+            </th>
+            <th>
+                <p id="price4"></p>
+            </th>
+        </tr>
+        <tr>
+            <th>
+                5.KFC
+            </th>
+            <th>
+                :
+            </th>
+            <th>
+                <p id="price5"></p>
+            </th>
+        </tr>
+        <tr>
+            <th>
+                6.Frankie
+            </th>
+            <th>
+                :
+            </th>
+            <th>
+                <p id="price6"></p>
+            </th>
+        </tr>
+        <tr>
+            <th>
+               <b>Total in rupees</b> 
+            </th>
+            <th>
+                :
+            </th>
+            <th>
+                <p id="price7"></p>
+            </th>
+        </tr>
+    </table>
+    <script>
+		let count1 = 0;
+		const countDisplay1 = document.getElementById("count1");
+		const incrementButton1 = document.getElementById("increment1");
+		const decrementButton1 = document.getElementById("decrement1");
+		function increment1() {
+			count1++;
+			countDisplay1.innerText = count1;
+		}
+		function decrement1() {
+            if(count1>0){
+			count1--;
+			countDisplay1.innerText = count1;}
+		}
+		incrementButton1.addEventListener("click", increment1);
+		decrementButton1.addEventListener("click", decrement1);
+        let count2 = 0;
+		const countDisplay2 = document.getElementById("count2");
+		const incrementButton2 = document.getElementById("increment2");
+		const decrementButton2 = document.getElementById("decrement2");
+		function increment2() {
+			count2++;
+			countDisplay2.innerText = count2;
+		}
+		function decrement2() {
+            if(count2>0){
+			count2--;
+			countDisplay2.innerText = count2;}
+		}
+		incrementButton2.addEventListener("click", increment2);
+		decrementButton2.addEventListener("click", decrement2);
+        let count3 = 0;
+		const countDisplay3 = document.getElementById("count3");
+		const incrementButton3 = document.getElementById("increment3");
+		const decrementButton3 = document.getElementById("decrement3");
+		function increment3() {
+			count3++;
+			countDisplay3.innerText = count3;
+		}
+		function decrement3() {
+            if(count3>0){
+			count3--;
+			countDisplay3.innerText = count3;}
+		}
+		incrementButton3.addEventListener("click", increment3);
+		decrementButton3.addEventListener("click", decrement3);
+        let count4 = 0;
+		const countDisplay4 = document.getElementById("count4");
+		const incrementButton4 = document.getElementById("increment4");
+		const decrementButton4 = document.getElementById("decrement4");
+		function increment4() {
+			count4++;
+			countDisplay4.innerText = count4;
+		}
+		function decrement4() {
+            if(count4>0){
+			count4--;
+			countDisplay4.innerText = count4;}
+		}
+		incrementButton4.addEventListener("click", increment4);
+		decrementButton4.addEventListener("click", decrement4);
+        let count5 = 0;
+		const countDisplay5 = document.getElementById("count5");
+		const incrementButton5 = document.getElementById("increment5");
+		const decrementButton5 = document.getElementById("decrement5");
+		function increment5() {
+			count5++;
+			countDisplay5.innerText = count5;
+		}
+		function decrement5() {
+            if(count5>0){
+			count5--;
+			countDisplay5.innerText = count5;}
+		}
+		incrementButton5.addEventListener("click", increment5);
+		decrementButton5.addEventListener("click", decrement5);
+        let count6 = 0;
+		const countDisplay6 = document.getElementById("count6");
+		const incrementButton6 = document.getElementById("increment6");
+		const decrementButton6 = document.getElementById("decrement6");
+		function increment6() {
+			count6++;
+			countDisplay6.innerText = count6;
+		}
+		function decrement6() {
+            if(count6>0){
+			count6--;
+			countDisplay6.innerText = count6;}
+		}
+		incrementButton6.addEventListener("click", increment6);
+		decrementButton6.addEventListener("click", decrement6);
+        function showTable() {
+            document.getElementById("price1").innerText=499*count1;
+            document.getElementById("price2").innerText=399*count2;
+            document.getElementById("price3").innerText=300*count3;
+            document.getElementById("price4").innerText=199*count4;
+            document.getElementById("price5").innerText=800*count5;
+            document.getElementById("price6").innerText=100*count6;
+            document.getElementById("price7").innerText=100*count6+499*count1+399*count2+300*count3+199*count4+800*count5;
+        var table = document.getElementById("myTable");
+        if (table.style.display === "none") {
+          table.style.display = "table";
+        } else {
+          table.style.display = "none";
+        }
+      }
+	</script>
+  </body>
+</html>
